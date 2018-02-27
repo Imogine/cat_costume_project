@@ -76,6 +76,20 @@ h3 {
   color: #323232;
 }
 
+p {
+  font-family: PT Serif;
+  font-size: .875em;
+  line-height: 1.75em;
+  color: #323232;
+}
+
+a {
+  font-family: PT Serif;
+  font-style: Bold;
+  font-size: 1em;
+  color: #f26522;
+}
+
 #page {
   max-width: 900px;
   margin: 0 auto;
@@ -94,19 +108,28 @@ nav {
 }
 
 nav h1 {
-  display: inline-block;
+  float: left;
   font-family: PT Sans Narrow;
   font-style: Bold;
   font-size: 1.875em;
   color:#323232;
+  margin: .75em;
 
 }
 
 nav p{
- display: inline-block;
+ float: right;
  margin: 5px 6px;
+ font-family: PT Sans;
+ font-size: .9em;
+ color: #323232;
+ margin: 2.2em;
 }
 
+.main {
+  width: 60%;
+  margin: 0 auto;
+}
 .main h1,h2{
   text-align: center;
 }
@@ -117,6 +140,13 @@ nav p{
 
 .main h2{
   text-align:
+}
+
+footer h1 {
+  font-family: PT Sans Narrow;
+  font-style: Bold;
+  font-size: 1.25em;
+  color: #323232;
 }
 /* On devices wider than 660px */
 @media(min-width: 660px) {
