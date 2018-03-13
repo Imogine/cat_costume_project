@@ -104,11 +104,14 @@ a {
 
 
 
-.splash img{
+.splash {
   width: 100%;
-  height:auto;
+  height:500px;
+  background-image: url(file:///Users/imogine/cat_costume_project/assets/images/kats-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%
 }
-
 nav {
   height: 80px;
   width: 100%;
@@ -192,8 +195,9 @@ footer h1 {
   width: 100%;
 }
 .images {
-  margin: 0 auto;
-  width: 89%;
+text-align: center;
+margin: 0 auto;
+ width: 89%;
   padding: 80px 0px 80px 0px;
 }
 .images img{
@@ -239,8 +243,13 @@ margin: 0 55px;
   margin-bottom: 45px;
 }
 
-footer img {
+footer {
   width: 100%;
+  height: 300px;
+background-image: url(file:///Users/imogine/cat_costume_project/assets/images/kats-map.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%
 }
 
 .credits {
@@ -257,16 +266,146 @@ footer img {
 line-height: 125px;
 }
 
+
 /* On devices wider than 660px */
-@media(min-width: 660px) {
+@media(max-width: 800px) {
 
+h1 {
+  font-size: 1.5em;
+}
 
+h3 {
+  font-size: .9em;
+  margin: 0;
+}
 
+nav h1 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  line-height: 3em;
+}
 
+nav p {
+  display: none;
+}
 
+.splash {
+  height: 250px;
+}
+
+.main {
+  width: 100%;
+}
+
+.about {
+  width: 100%;
+  padding: 0;
+}
+
+.about p{
+  margin: 30px;
+}
+
+.kat {
+  max-width: 9999px;
+  width: inherit;
+  float: none;
+  margin-right: 0;
+}
+
+.mavis {
+
+  max-width: 9999px;
+  width: inherit;
+  float: none;
+  margin-left: 0;
+}
+
+.images{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.first-kat {
+display: none;
+}
+
+.middle-kat {
+display: none;
+}
+
+.last-kat {
+  padding: 30px;
+}
+
+#info {
+  height: 350px;
+padding: 20px 0px;
+}
+#info h1{
+  display: none;
+}
+
+.info, .hours {
+background-color: #eee;
+padding: 0px;
+margin: 0px;
+width: 100%;
+height: inherit;
+display: inline;
+}
+
+.info, .hours h3 {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact ul {
+  margin: 0px;
+}
+
+footer {
+  height: 150px;
+}
 
 }
 
 /* On devices wider than 940px */
-@media(min-width: 940px) {
+@media (min-width: 801px) and (max-width: 1200px) {
+  .splash {
+    height: 400px;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+.images {
+  padding: 20px 0px 20px 0px;
+
+}
+  .images img {
+    border-radius: 50%;
+    width: 198px;
+}
+
+#info h1 {
+  margin: 20px 0;
+}
+
+.info, .hours {
+  width: 34%;
+
+}
+footer {
+  height: 250px;
+}
+
+#about-container {
+    width: 650px;
+    margin: 0 auto;
+}
 }
